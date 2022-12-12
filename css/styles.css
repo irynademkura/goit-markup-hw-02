@@ -102,6 +102,10 @@ body {
     cursor: pointer;
 }
 
+.hero .button-primary:active {
+    background-color: #404BBF;
+}
+
 /* Головна секція */
 
 .feature-list .title {
