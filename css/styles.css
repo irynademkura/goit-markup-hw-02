@@ -9,6 +9,16 @@
     --subtle-text-color: #8E8F99;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before
+*::after {
+box-sizing: inherit;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -35,6 +45,8 @@ body {
 
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* СТИЛІ ДЛЯ СТУДІЯ */
@@ -60,7 +72,7 @@ body {
     color: var(--primary-brand-color);
 }
 
-.contacts-list .link{
+.contacts .list .link{
     font-style: normal;
     color: var(--primary-text-color);
     font-size: 16px;
@@ -68,8 +80,8 @@ body {
     letter-spacing: 0.02em;
 }
 
-.contacts-list .link:hover,
-.contacts-list .link:focus {
+.contacts .list .link:hover,
+.contacts .list .link:focus {
     color: var(--primary-brand-color);
 }
 
@@ -89,17 +101,22 @@ body {
 }
 
 .hero .button-primary {
+    min-width: 170px;
+    padding: 16px 32px;
+    margin: 0 auto;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.04em;
-    display: flex;
-    align-items: center;
+    display: block;
+    text-align: center;
     color: var(--primary-white-color);
     background-color: var(--primary-brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    border-color: transparent;
+    border-radius: 4px;
 }
 
 .hero .button-primary:active {
@@ -108,7 +125,7 @@ body {
 
 /* Головна секція */
 
-.feature-list .title {
+.feature .list .title {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 20px;
@@ -116,7 +133,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-.feature-list .text {
+.feature .list .text {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.5;
@@ -148,7 +165,7 @@ color: var(--title-text-color);
 }
 
 
-.team-list .title {
+.team .list .title {
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -157,7 +174,7 @@ letter-spacing: 0.02em;
 color: var(--title-text-color);
 }
 
-.team-list .text {
+.team .list .text {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
