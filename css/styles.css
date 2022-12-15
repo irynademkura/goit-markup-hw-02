@@ -88,6 +88,8 @@ body {
 /* Герой */
 .hero {
     background-color: var(--title-text-color);
+    text-align: center;
+    margin-bottom: 120px;
 }
 
 .hero .title {
@@ -96,7 +98,6 @@ body {
     font-weight: 500;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
 }
 
@@ -110,7 +111,6 @@ body {
     line-height: 1.18;
     letter-spacing: 0.04em;
     display: block;
-    text-align: center;
     color: var(--primary-white-color);
     background-color: var(--primary-brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -125,7 +125,17 @@ body {
 
 /* Головна секція */
 
+.section .no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.feature {
+    margin-top: 0;
+}
+
 .feature .list .title {
+    margin-bottom: 8px;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 20px;
@@ -141,35 +151,45 @@ body {
 }
 
 .about-title {
+    margin-top: 120px;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 36px;
     line-height: 1.11;
-    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    text-align: center;
+}
+
+.about .list {
+    margin-top: 72px;
 }
 
 .team {
     background-color: var(--secondary-bg-color);
+    margin-top: 120px;
 }
 
 .team-title {
-font-weight: 500;
-font-size: 36px;
-line-height: 1.11;
-text-align: center;
-letter-spacing: 0.02em;
-text-transform: capitalize;
-color: var(--title-text-color);
+    padding-top: 120px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--title-text-color);
 }
 
+.team .list {
+    padding-bottom: 120px;
+}
 
 .team .list .title {
+    margin-bottom: 8px;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
-text-align: center;
 letter-spacing: 0.02em;
 color: var(--title-text-color);
 }
@@ -177,7 +197,6 @@ color: var(--title-text-color);
 .team .list .text {
     font-size: 16px;
     line-height: 1.5;
-    text-align: center;
     letter-spacing: 0.02em;
 }
 
