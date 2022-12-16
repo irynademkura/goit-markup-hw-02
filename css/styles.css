@@ -142,19 +142,23 @@ ul {
   margin-left: 40px;
 }
 
-.contacts .list .link {
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.contacts .link {
   font-style: normal;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
-.contacts .list .link:hover,
-.contacts .list .link:focus {
+.contacts .list .link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
   color: var(--primary-brand-color);
 }
 
@@ -163,7 +167,6 @@ ul {
 .hero {
   background-color: var(--title-text-color);
   text-align: center;
-  margin-bottom: 120px;
   padding-top: 192px;
   padding-bottom: 192px;
 }
@@ -202,12 +205,11 @@ ul {
 
 /* OUR FEATURES */
 
-.section .no-padding {
-  padding-top: 0;
-  padding-bottom: 0;
-}
+
 
 .feature {
+  padding-top: 120px;
+  padding-bottom: 120px;
   margin-top: 0;
   display: flex;
   margin-left: auto;
@@ -244,10 +246,11 @@ ul {
 .about {
   display: flex;
   margin-left: auto;
+  margin-bottom: 120px;
 }
 
 .about-title {
-  margin-top: 120px;
+  margin-top: 0;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 36px;
@@ -272,15 +275,15 @@ ul {
 /* ___OUR TEAM___ */
 
 .team {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: var(--secondary-bg-color);
-  margin-top: 120px;
   display: flex;
   margin-left: auto;
   text-align: center;
 }
 
 .team-title {
-  padding-top: 120px;
   text-align: center;
   font-weight: 500;
   font-size: 36px;
@@ -289,14 +292,12 @@ ul {
   text-transform: capitalize;
   color: var(--title-text-color);
 }
-
-.team .list {
-  padding-bottom: 120px;
+.team-info {
+  padding: 32px 16px;
 }
 
 .team .list .title {
   margin-bottom: 8px;
-  margin-top: 32px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -308,7 +309,6 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
 }
 
 .team .list .item {
@@ -365,13 +365,17 @@ ul {
 
 /* ___FILTERS___ */
 
+.site-portfolio {
+  margin-top: 96px;
+  margin-bottom: 120px;
+}
+
 .filter {
   display: flex;
   justify-content: center;
 }
 
 .filter .item {
-  margin-top: 96px;
   margin-right: 24px;
 }
 .filter .item:last-child {
@@ -399,9 +403,7 @@ ul {
 }
 
 .portfolio-title {
-  padding-top: 32px;
-  padding-left: 16px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 20px;
@@ -410,25 +412,31 @@ ul {
 }
 
 .portfolio-text {
-  padding-bottom: 32px;
-  padding-left: 16px;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
+.card-info {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 16px;
+  list-style: none;
+}
+
 /* FOOTER */
 
 .page-footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
   padding-left: 156px;
   padding-right: auto;
   background-color: var(--title-text-color);
 }
 
 .footer-logo {
-  padding-top: 100px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   color: var(--secondary-bg-color);
   font-family: "Raleway";
   font-weight: 800;
@@ -446,7 +454,6 @@ ul {
 }
 
 .footer-text {
-  padding-bottom: 100px;
   width: 264px;
   color: var(--accent-color);
   font-family: "Roboto";
